@@ -1,0 +1,7 @@
+Model,F1 (macro),Precision (macro),Recall (macro),Train Time (s),CV F1 (5-fold)
+XGBoost Tuned (best random search params),0.7618,0.7623,0.7614,116.5,0.7606 ± 0.0002
+Stacked XGBoost Ensemble (3 base + cuML LR meta),0.7524,0.7529,0.7521,1.95,
+"XGBoost Initial (full 7.7M, gpu_hist)",0.7493,0.7498,0.749,29.6,
+Heterogeneous Stack (XGB + RF + LR → cuML LR meta),0.7449,0.7454,0.7446,0.08,
+"XGBoost Baseline (200k, DataAnalysis params)",0.7168,0.7169,0.7168,5.7,
+"cuML Random Forest (100 trees, depth 16)",0.7102,0.7122,0.7097,53.9,
